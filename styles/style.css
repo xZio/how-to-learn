@@ -35,7 +35,7 @@
 }
 
 .header__title {
-  width: 730px;
+  max-width: 730px;
   margin: 0 0 0 64px;
   line-height: 96px;
   font-size: 102px;
@@ -47,7 +47,7 @@
   position: absolute;
   left: 64px;
   bottom: 30px;
-  width: 388px;
+  max-width: 388px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -57,6 +57,7 @@
 
 .header__link {
   color: #2f80ed;
+  text-decoration: none;
 }
 
 .header__main-illustration {
@@ -66,9 +67,12 @@
   height: 608px;
   width: 765px;
   z-index: 1;
+  object-fit: contain;
+  object-position: right;
+
 }
 
-.header__squre-pic {
+.header__square-pic {
   background-color: #2f80ed;
   position: absolute;
   top: 64px;
@@ -82,6 +86,7 @@
   justify-content: center;
   padding-top: 100px;
 }
+
 .two-columns {
   display: flex;
   justify-content: space-between;
@@ -153,7 +158,6 @@
 
 .section-subtitle_theme_dark {
   color: white;
-  width: 60%;
 }
 
 .table {
@@ -194,7 +198,7 @@
 }
 
 .feynman {
-  height: 890px;
+  min-height: 890px;
   background-image: url(../images/feynman.png);
   background-position: bottom left;
   background-repeat: no-repeat;
@@ -210,7 +214,7 @@
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
-  width: 648px;
+  max-width: 648px;
   text-align: center;
   margin: 100px 0 70px 0;
 }
@@ -221,6 +225,7 @@
   font-weight: normal;
   margin: 0;
 }
+
 .feynman__link {
   line-height: 51px;
   font-size: 36px;
@@ -243,6 +248,8 @@
 }
 
 .kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: contain;
   position: absolute;
   width: 877px;
   height: 877px;
@@ -257,6 +264,7 @@
   display: flex;
   justify-content: space-around;
   padding: 60px 0 40px 0;
+  box-sizing: border-box;
 }
 
 .footer__columns {
@@ -265,11 +273,24 @@
   justify-content: space-between;
 }
 
-.footer__column_content_copyright {
-  flex-basis: 711px;
+.footer__column {
   display: flex;
   flex-direction: column;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
   justify-content: space-between;
+}
+
+.footer__column_content_info {
+  padding-bottom: 16px;
+  height: fit-content;
+}
+
+.footer__column_content_social {
+  padding-bottom: 16px;
+  height: fit-content;
 }
 
 .footer__author {
@@ -277,20 +298,6 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-}
-
-.footer__column_content_info {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 16px;
-  height: fit-content;
-}
-
-.footer__column_content_social {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 16px;
-  height: fit-content;
 }
 
 .footer__column-heading {
