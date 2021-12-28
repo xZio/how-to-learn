@@ -69,7 +69,6 @@
   z-index: 1;
   object-fit: contain;
   object-position: right;
-
 }
 
 .header__square-pic {
@@ -105,7 +104,7 @@
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
-  }
+}
 
 .two-columns__paragraph {
   margin-top: 0;
@@ -142,7 +141,6 @@
 
 .section-title_theme_dark {
   color: white;
-  width: 60%;
   margin-top: 90px;
 }
 
@@ -285,13 +283,11 @@
 
 .footer__column_content_info {
   padding-bottom: 16px;
-  height: fit-content;
-}
+ }
 
 .footer__column_content_social {
   padding-bottom: 16px;
-  height: fit-content;
-}
+  }
 
 .footer__author {
   margin: 18px 0;
