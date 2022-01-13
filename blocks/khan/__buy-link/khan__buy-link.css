@@ -3,4 +3,11 @@
   font-size: 30px;
   font-weight: normal;
   min-width: 215px;
+  color: #2f80ed;
+  text-decoration: none;
+  transition: opacity 1.5s;
+}
+
+.khan__buy-link:hover {
+  opacity: 0.5;
 }
